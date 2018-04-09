@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/itemMicSearch"
+        android:icon="@drawable/ic_mic_black_24dp"
+        android:title="@string/micsearch"
+        app:showAsAction="always" />
+</menu>
