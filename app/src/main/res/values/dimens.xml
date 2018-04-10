@@ -6,9 +6,10 @@
     <dimen name="tab_max_width">264dp</dimen>
     <dimen name="tab_padding_bottom">16dp</dimen>
     <dimen name="tab_label">14sp</dimen>
-    <dimen name="custom_tab_layout_height">62dp</dimen>
+    <dimen name="custom_tab_layout_height">60dp</dimen>
     <dimen name="sub_tab_label">12sp</dimen>
     <dimen name="custom_sub_tab_layout_height">58dp</dimen>
+    <dimen name="custom_sub_tab_layout_height2">50dp</dimen>
 
     <dimen name="nav_header_vertical_spacing">8dp</dimen>
     <dimen name="nav_header_height">176dp</dimen>

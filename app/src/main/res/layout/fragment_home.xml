@@ -20,6 +20,7 @@
             app:tabMode="scrollable"
             app:tabPaddingEnd="14dp"
             app:tabPaddingStart="14dp"
+            app:tabSelectedTextColor="@color/colorPrimary"
             app:tabTextAppearance="@style/SubTabLayoutStyle" />
 
     </android.support.design.widget.AppBarLayout>

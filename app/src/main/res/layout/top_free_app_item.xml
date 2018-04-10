@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <TextView
+        android:id="@+id/tv_app_item_number"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="1" />
+
+    <ImageView
+        android:id="@+id/iv_app_item"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/tv_app_item_number"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/coc" />
+
+    <RelativeLayout
+        android:id="@+id/rl_app_item"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignTop="@id/iv_app_item"
+        android:layout_toEndOf="@+id/iv_app_item"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp">
+
+        <ImageView
+            android:id="@+id/iv_more_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_more_vert_black_18dp" />
+
+        <TextView
+            android:id="@+id/tv_app_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="@string/card_app_name"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_app_developer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_app_name"
+            android:layout_marginEnd="20dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="@string/card_app_name"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_2_app_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/tv_app_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="2dp"
+                android:paddingStart="2dp"
+                android:text="@string/demo_size"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/iv_app_dot"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_alignBottom="@+id/tv_app_size"
+                android:layout_alignTop="@+id/tv_app_size"
+                android:layout_toEndOf="@+id/tv_app_size"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_fiber_manual_record_black_18dp" />
+
+            <TextView
+                android:id="@+id/tv_app_ratings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/iv_app_dot"
+                android:paddingEnd="2dp"
+                android:paddingStart="2dp"
+                android:text="@string/sample_rating"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/iv_app_rating"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_alignBottom="@+id/tv_app_ratings"
+                android:layout_alignTop="@+id/tv_app_ratings"
+                android:layout_toEndOf="@+id/tv_app_ratings"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_star_black_18dp" />
+
+            <TextView
+                android:id="@+id/tv_is_free"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="@string/free"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+                tools:ignore="RelativeOverlap,SmallSp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
+

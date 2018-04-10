@@ -19,4 +19,6 @@
     <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
+    <string name="show_installed_apps">Show installed apps</string>
+    <string name="demo_size">46MB</string>
 </resources>
