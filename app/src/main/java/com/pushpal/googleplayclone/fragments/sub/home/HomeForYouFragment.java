@@ -1,4 +1,4 @@
-package com.pushpal.googleplayclone.fragments;
+package com.pushpal.googleplayclone.fragments.sub.home;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;

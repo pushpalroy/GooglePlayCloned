@@ -1,4 +1,4 @@
-package com.pushpal.googleplayclone.fragments;
+package com.pushpal.googleplayclone.fragments.main;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -9,8 +9,8 @@ import android.view.ViewGroup;
 
 import com.pushpal.googleplayclone.R;
 
-public class HomeTopSellFragment extends Fragment {
-    public HomeTopSellFragment() {
+public class MusicFragment extends Fragment {
+    public MusicFragment() {
         // Required empty public constructor
     }
 
@@ -23,6 +23,6 @@ public class HomeTopSellFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_games, container, false);
+        return inflater.inflate(R.layout.fragment_music, container, false);
     }
 }

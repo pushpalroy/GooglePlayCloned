@@ -1,4 +1,4 @@
-package com.pushpal.googleplayclone.fragments;
+package com.pushpal.googleplayclone.fragments.main;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -12,6 +12,11 @@ import android.widget.TextView;
 
 import com.pushpal.googleplayclone.R;
 import com.pushpal.googleplayclone.adapters.ViewPagerAdapter;
+import com.pushpal.googleplayclone.fragments.sub.home.HomeEditorChoiceFragment;
+import com.pushpal.googleplayclone.fragments.sub.home.HomeForYouFragment;
+import com.pushpal.googleplayclone.fragments.sub.home.HomeGenresFragment;
+import com.pushpal.googleplayclone.fragments.sub.home.HomeNewReleaseFragment;
+import com.pushpal.googleplayclone.fragments.sub.home.HomeTopChartsFragment;
 import com.pushpal.googleplayclone.viewPager.CustomViewPager;
 
 import java.util.Objects;
@@ -49,7 +54,7 @@ public class HomeFragment extends Fragment {
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(Objects.requireNonNull(getActivity()).getSupportFragmentManager());
         adapter.addFragment(new HomeForYouFragment(), "For You");
-        adapter.addFragment(new HomeTopSellFragment(), "Top Selling");
+        adapter.addFragment(new HomeTopChartsFragment(), "Top Charts");
         adapter.addFragment(new HomeNewReleaseFragment(), "New Releases");
         adapter.addFragment(new HomeGenresFragment(), "Genres");
         adapter.addFragment(new HomeEditorChoiceFragment(), "Editor's Choice");

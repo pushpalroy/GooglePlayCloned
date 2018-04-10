@@ -13,11 +13,11 @@ import android.view.MenuItem;
 
 import com.arlib.floatingsearchview.FloatingSearchView;
 import com.pushpal.googleplayclone.adapters.ViewPagerAdapter;
-import com.pushpal.googleplayclone.fragments.BooksFragment;
-import com.pushpal.googleplayclone.fragments.GamesFragment;
-import com.pushpal.googleplayclone.fragments.HomeFragment;
-import com.pushpal.googleplayclone.fragments.MoviesFragment;
-import com.pushpal.googleplayclone.fragments.MusicFragment;
+import com.pushpal.googleplayclone.fragments.main.BooksFragment;
+import com.pushpal.googleplayclone.fragments.main.GamesFragment;
+import com.pushpal.googleplayclone.fragments.main.HomeFragment;
+import com.pushpal.googleplayclone.fragments.main.MoviesFragment;
+import com.pushpal.googleplayclone.fragments.main.MusicFragment;
 import com.pushpal.googleplayclone.viewPager.CustomViewPager;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {

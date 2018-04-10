@@ -1,4 +1,4 @@
-package com.pushpal.googleplayclone.fragments;
+package com.pushpal.googleplayclone.fragments.sub.home;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -9,8 +9,8 @@ import android.view.ViewGroup;
 
 import com.pushpal.googleplayclone.R;
 
-public class GamesFragment extends Fragment {
-    public GamesFragment() {
+public class HomeTopChartsFragment extends Fragment {
+    public HomeTopChartsFragment() {
         // Required empty public constructor
     }
 
