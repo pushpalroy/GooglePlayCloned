@@ -45,7 +45,7 @@
                 android:id="@+id/tl_app_list"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/custom_sub_tab_layout_height2"
-                android:background="@drawable/background_border_bottom"
+                android:background="@drawable/bg_border_bottom"
                 app:elevation="0dp"
                 app:tabGravity="fill"
                 app:tabIndicatorColor="@color/colorPrimary"

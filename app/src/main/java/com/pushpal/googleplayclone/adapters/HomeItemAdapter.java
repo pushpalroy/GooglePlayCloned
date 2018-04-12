@@ -98,8 +98,10 @@ public class HomeItemAdapter extends RecyclerView.Adapter {
         private TextView btn_more;
         private RecyclerView main_item_app_recycler_view;
 
+
         NormalViewHolder(View view) {
             super(view);
+
             tv_card_header = view.findViewById(R.id.header);
             tv_card_sub_header = view.findViewById(R.id.sub_header);
             btn_more = view.findViewById(R.id.more);

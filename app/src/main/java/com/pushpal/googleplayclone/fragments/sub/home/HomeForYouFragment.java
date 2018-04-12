@@ -60,5 +60,6 @@ public class HomeForYouFragment extends Fragment {
 
         HomeItemAdapter homeItemAdapter = new HomeItemAdapter(mArrayList, getContext());
         mainRecyclerView.setAdapter(homeItemAdapter);
+
     }
 }

@@ -21,4 +21,20 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="show_installed_apps">Show installed apps</string>
     <string name="demo_size">46MB</string>
+
+    <string name="app_header_name">Udacity - Lifelong Learning</string>
+    <string name="app_dev_name">Udacity, Inc</string>
+    <string name="app_three_plus">3+</string>
+    <string name="app_size">29MB</string>
+    <string name="install_button">Install</string>
+    <string name="downloads">Downloads</string>
+    <string name="sample_users">21,831</string>
+    <string name="sample_category">Education</string>
+    <string name="sample_similar">Similar</string>
+    <string name="million">MILLION</string>
+    <string name="sample_downloads">10</string>
+    <string name="education">Education</string>
+    <string name="_4_3">4.3</string>
+    <string name="app_desc">Prepare yourself for the jobs of today, tomorrow and beyond with Udacity</string>
+    <string name="read_more">READ MORE</string>
 </resources>

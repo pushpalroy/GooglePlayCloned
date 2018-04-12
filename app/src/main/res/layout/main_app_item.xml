@@ -1,77 +1,77 @@
-<LinearLayout android:id="@+id/cardViewLayout"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardViewLayout"
     android:layout_width="120dp"
     android:layout_height="180dp"
-    android:orientation="vertical"
-    android:layout_marginStart="0dp"
-    android:layout_marginEnd="10dp"
     android:layout_marginBottom="5dp"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="0dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_app_image"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/coc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/tv_app_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:text="@string/card_app_name"
+            android:textSize="12sp" />
 
         <ImageView
-            android:id="@+id/iv_app_image"
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:contentDescription="@string/app_name"
-            android:scaleType="centerCrop"
-            android:src="@drawable/coc" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
+            android:id="@+id/iv_more_options"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:weightSum="5">
-
-            <TextView
-                android:id="@+id/tv_app_name"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="4"
-                android:gravity="center_vertical"
-                android:maxLines="2"
-                android:text="@string/card_app_name"
-                android:textSize="12sp"/>
-
-            <ImageView
-                android:id="@+id/iv_more_options"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:src="@drawable/ic_more_vert_black_18dp" />
-        </LinearLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp">
-
-            <TextView
-                android:id="@+id/tv_app_rating"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:layout_marginEnd="1dp"
-                android:text="@string/sample_rating"
-                android:textSize="10sp"/>
-
-            <ImageView
-                android:id="@+id/iv_app_rating"
-                android:layout_width="8dp"
-                android:layout_height="8dp"
-                android:layout_alignTop="@+id/tv_app_rating"
-                android:layout_alignBottom="@+id/tv_app_rating"
-                android:layout_toEndOf="@+id/tv_app_rating"
-                android:contentDescription="@string/app_name"
-                android:src="@drawable/ic_star_black_18dp" />
-
-            <TextView
-                android:id="@+id/tv_is_free"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:text="@string/free"
-                android:textSize="10sp"
-                android:textColor="@color/colorPrimaryDark" />
-        </RelativeLayout>
-
+            android:layout_weight="1"
+            android:src="@drawable/ic_more_vert_black_18dp" />
     </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/tv_app_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="1dp"
+            android:gravity="center_vertical"
+            android:text="@string/sample_rating"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/iv_app_rating"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_alignBottom="@+id/tv_app_rating"
+            android:layout_alignTop="@+id/tv_app_rating"
+            android:layout_toEndOf="@+id/tv_app_rating"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_star_black_18dp" />
+
+        <TextView
+            android:id="@+id/tv_is_free"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/free"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+</LinearLayout>
 

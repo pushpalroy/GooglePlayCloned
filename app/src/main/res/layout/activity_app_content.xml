@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:id="@+id/iv_app_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_udacity" />
+
+            <LinearLayout
+                android:id="@+id/ll_app_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/iv_app_image"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_app_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_header_name"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_app_developer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_dev_name"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_app_3_plus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/bg_black_rect"
+                    android:paddingBottom="1dp"
+                    android:paddingEnd="2dp"
+                    android:paddingStart="2dp"
+                    android:paddingTop="1dp"
+                    android:text="@string/app_three_plus"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_app_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_size"
+                    android:textSize="14sp" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:paddingEnd="30dp"
+                    android:paddingStart="30dp"
+                    android:stateListAnimator="@null"
+                    android:text="@string/install_button"
+                    android:theme="@style/AppTheme.BlueButton" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorVeryLightGrey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="65dp"
+                android:layout_height="85dp"
+                android:layout_margin="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/badge_downloads"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp">
+
+                    <TextView
+                        android:id="@+id/tv_badge_number"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/bg_circle_border"
+                        android:gravity="center"
+                        android:text="@string/sample_downloads"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/tv_badge_number_unit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/bg_item_count"
+                        android:gravity="center"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/million"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_app_downloads_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:text="@string/downloads"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="65dp"
+                android:layout_height="85dp"
+                android:layout_margin="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/badge_users"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp">
+
+                    <TextView
+                        android:id="@+id/tv_badge_users_number"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/bg_item_count"
+                        android:gravity="center"
+                        android:text="@string/_4_3"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="24sp" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_app_users_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:drawableEnd="@drawable/ic_person_black_18dp"
+                    android:gravity="center"
+                    android:text="@string/sample_users"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="65dp"
+                android:layout_height="85dp"
+                android:layout_margin="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/badge_education"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp">
+
+                    <ImageView
+                        android:id="@+id/tv_badge_education"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/bg_circle_solid"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:src="@drawable/ic_school_white_24dp"
+                        android:textSize="24sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_app_education_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:text="@string/education"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="65dp"
+                android:layout_height="85dp"
+                android:layout_margin="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/badge_similar"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp">
+
+                    <ImageView
+                        android:id="@+id/tv_badge_similar"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/bg_circle_solid"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:src="@drawable/ic_flag_white_24dp"
+                        android:textSize="24sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_app_similar_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:text="@string/sample_similar"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/colorVeryLightGrey" />
+
+        <TextView
+            android:id="@+id/tv_app_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:padding="10dp"
+            android:text="@string/app_desc"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="@string/read_more"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_app_images"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

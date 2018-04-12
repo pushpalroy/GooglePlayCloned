@@ -1,5 +1,7 @@
 package com.pushpal.googleplayclone.adapters;
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -7,9 +9,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.pushpal.googleplayclone.R;
+import com.pushpal.googleplayclone.activities.AppActivity;
 import com.pushpal.googleplayclone.models.MainItemAppModel;
 
 import java.util.ArrayList;
@@ -17,6 +21,7 @@ import java.util.ArrayList;
 public class MainItemAppAdapter extends RecyclerView.Adapter<MainItemAppAdapter.MyViewHolder> {
 
     private ArrayList<MainItemAppModel> mArrayList;
+    private Context mcontext;
 
     MainItemAppAdapter(ArrayList<MainItemAppModel> mArrayList) {
         this.mArrayList = mArrayList;
@@ -25,6 +30,7 @@ public class MainItemAppAdapter extends RecyclerView.Adapter<MainItemAppAdapter.
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        mcontext = parent.getContext();
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.main_app_item, parent, false);
         return new MyViewHolder(view);
     }
@@ -44,9 +50,10 @@ public class MainItemAppAdapter extends RecyclerView.Adapter<MainItemAppAdapter.
         return mArrayList.size();
     }
 
-    class MyViewHolder extends RecyclerView.ViewHolder {
+    class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         private ImageView iv_app_image;
         private TextView tv_app_name, tv_app_rating;
+        private LinearLayout cardViewLayout;
 
         MyViewHolder(View view) {
             super(view);
@@ -54,6 +61,14 @@ public class MainItemAppAdapter extends RecyclerView.Adapter<MainItemAppAdapter.
             iv_app_image = view.findViewById(R.id.iv_app_image);
             tv_app_name = view.findViewById(R.id.tv_app_name);
             tv_app_rating = view.findViewById(R.id.tv_app_rating);
+            cardViewLayout = view.findViewById(R.id.cardViewLayout);
+            cardViewLayout.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View view) {
+            Intent intent = new Intent(mcontext, AppActivity.class);
+            mcontext.startActivity(intent);
         }
     }
 }

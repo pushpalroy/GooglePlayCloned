@@ -1,4 +1,4 @@
-package com.pushpal.googleplayclone;
+package com.pushpal.googleplayclone.activities;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -12,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
 import com.arlib.floatingsearchview.FloatingSearchView;
+import com.pushpal.googleplayclone.R;
 import com.pushpal.googleplayclone.adapters.ViewPagerAdapter;
 import com.pushpal.googleplayclone.fragments.main.BooksFragment;
 import com.pushpal.googleplayclone.fragments.main.GamesFragment;
