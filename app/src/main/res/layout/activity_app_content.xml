@@ -303,4 +303,11 @@
         android:id="@+id/rv_app_screenshots"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
+    <include
+        layout="@layout/activity_app_ratings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp" />
+
 </LinearLayout>
