@@ -34,7 +34,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_margin="10dp"
-                android:background="@drawable/rounded_rect_shape"
+                android:background="@drawable/bg_rounded_rect"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
                 android:text="@string/card_numbering"

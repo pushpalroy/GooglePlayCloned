@@ -94,6 +94,7 @@
                 android:layout_toEndOf="@+id/iv_app_dot"
                 android:paddingEnd="2dp"
                 android:paddingStart="2dp"
+                android:drawablePadding="5dp"
                 android:text="@string/sample_rating"
                 android:textSize="12sp" />
 

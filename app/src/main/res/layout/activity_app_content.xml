@@ -10,7 +10,6 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -155,11 +154,48 @@
                         android:id="@+id/tv_badge_users_number"
                         android:layout_width="65dp"
                         android:layout_height="65dp"
-                        android:background="@drawable/bg_item_count"
+                        android:background="@drawable/bg_octagon"
                         android:gravity="center"
+                        android:paddingBottom="8dp"
                         android:text="@string/_4_3"
                         android:textColor="@color/colorAccent"
-                        android:textSize="24sp" />
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="14dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="16dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_star_white" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_star_white" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_star_white" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_star_white" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_star_white" />
+                    </LinearLayout>
                 </RelativeLayout>
 
 
@@ -168,7 +204,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
-                    android:drawableEnd="@drawable/ic_person_black_18dp"
+                    android:drawableEnd="@drawable/ic_person_grey"
                     android:gravity="center"
                     android:text="@string/sample_users"
                     android:textSize="12sp" />
@@ -264,7 +300,7 @@
     </LinearLayout>
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/rv_app_images"
+        android:id="@+id/rv_app_screenshots"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 </LinearLayout>

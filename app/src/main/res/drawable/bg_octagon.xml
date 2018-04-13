@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="65dp"
+    android:height="65dp"
+    android:viewportHeight="300"
+    android:viewportWidth="300">
+    <path
+        android:name="Shape 1 copy 2"
+        android:fillColor="#0f9d58"
+        android:pathData="m44.15 252.04 -41.15 -104.73 44.96 -103.16 104.74 -41.15 103.15 44.96 41.16 104.74 -44.96 103.16 -104.74 41.14 -103.15 -44.96z" />
+    <path
+        android:name="Shape 1"
+        android:fillColor="#fff"
+        android:pathData="m50.34 247.1 -38.95 -99.13 42.56 -97.64 99.13 -38.95 97.63 42.55 38.95 99.13 -42.56 97.64 -99.13 38.94 -97.63 -42.55z" />
+    <path
+        android:name="Shape 1 copy"
+        android:fillColor="#0f9d58"
+        android:pathData="m55.68 240.93 -36.67 -93.33 40.07 -91.92 93.33 -36.67 91.92 40.06 36.67 93.33 -40.07 91.92 -93.33 36.66 -91.92 -40.06z" />
+</vector>

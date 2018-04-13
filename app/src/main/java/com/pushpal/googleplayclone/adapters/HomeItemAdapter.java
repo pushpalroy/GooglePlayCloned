@@ -36,11 +36,11 @@ public class HomeItemAdapter extends RecyclerView.Adapter {
 
         switch (viewType) {
             case 1:
-                view = LayoutInflater.from(parent.getContext()).inflate(R.layout.popular_item, parent, false);
+                view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_popular, parent, false);
                 return new PopularViewHolder(view);
 
             case 2:
-                view = LayoutInflater.from(parent.getContext()).inflate(R.layout.main_item, parent, false);
+                view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_main, parent, false);
                 return new NormalViewHolder(view);
         }
         return null;

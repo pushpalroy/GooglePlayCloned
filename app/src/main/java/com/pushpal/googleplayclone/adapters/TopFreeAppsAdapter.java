@@ -24,7 +24,7 @@ public class TopFreeAppsAdapter extends RecyclerView.Adapter<TopFreeAppsAdapter.
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.top_free_app_item, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_top_free_app, parent, false);
         return new MyViewHolder(view);
     }
 
