@@ -2,16 +2,21 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:background="@color/colorRatingBackground">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="@color/colorAccent" />
 
     <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/profile_image"
-        android:layout_width="96dp"
-        android:layout_height="96dp"
+        android:layout_width="94dp"
+        android:layout_height="94dp"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/ic_udacity"
         app:civ_border_color="#FFFFFF"
-        app:civ_border_width="2dp" />
+        app:civ_border_width="3dp" />
 
     <TextView
         android:id="@+id/tv_rate_this_app"
@@ -31,8 +36,20 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv_rate_this_app"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
         android:secondaryProgressTint="@color/colorPrimary"
         android:stepSize="1"
         app:mrb_progressTint="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        style="?borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/rb_app"
+        android:text="@string/submit"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textColor="@color/colorGrey" />
 
 </RelativeLayout>

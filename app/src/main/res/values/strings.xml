@@ -10,7 +10,7 @@
     <string name="subheading">SubHeading</string>
     <string name="more_button">MORE</string>
     <string name="card_app_name">App Name</string>
-    <string name="sample_rating">4.6</string>
+    <string name="sample_rating">4.3</string>
     <string name="free">FREE</string>
     <string name="card_numbering">1/5</string>
 
@@ -38,4 +38,5 @@
     <string name="app_desc">Prepare yourself for the jobs of today, tomorrow and beyond with Udacity</string>
     <string name="read_more">READ MORE</string>
     <string name="rate_this_app">Rate this app</string>
+    <string name="submit">SUBMIT</string>
 </resources>

@@ -11,4 +11,12 @@
 
     <color name="colorPageGrey">#EEEEEE</color>
     <color name="colorBlack">#000000</color>
+
+    <color name="colorRatingBackground">#f2f2f2</color>
+
+    <color name="colorProgressRating1">#57bb8a</color>
+    <color name="colorProgressRating2">#9ace6a</color>
+    <color name="colorProgressRating3">#ffeb3b</color>
+    <color name="colorProgressRating4">#ffbb50</color>
+    <color name="colorProgressRating5">#ff8a65</color>
 </resources>

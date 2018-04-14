@@ -8,6 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
+import com.bumptech.glide.Glide;
 import com.pushpal.googleplayclone.R;
 import com.pushpal.googleplayclone.adapters.AppScreenshotsAdapter;
 
@@ -20,6 +21,7 @@ public class AppActivity extends AppCompatActivity {
     CollapsingToolbarLayout collapsingToolbar;
     RecyclerView appScreenshotView;
     ArrayList<String> screenshotImages;
+    de.hdodenhof.circleimageview.CircleImageView profileImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +42,11 @@ public class AppActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+
+        profileImageView = findViewById(R.id.profile_image);
+        Glide.with(this)
+                .load(R.drawable.profile_image)
+                .into(profileImageView);
 
         appScreenshotView = findViewById(R.id.rv_app_screenshots);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
