@@ -1,7 +1,6 @@
 package com.pushpal.googleplayclone.activities;
 
 import android.os.Bundle;
-import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -10,7 +9,9 @@ import android.view.View;
 
 import com.bumptech.glide.Glide;
 import com.pushpal.googleplayclone.R;
+import com.pushpal.googleplayclone.adapters.AppReviewsAdapter;
 import com.pushpal.googleplayclone.adapters.AppScreenshotsAdapter;
+import com.pushpal.googleplayclone.models.AppReviewItemModel;
 
 import java.util.ArrayList;
 import java.util.Objects;
@@ -18,9 +19,9 @@ import java.util.Objects;
 public class AppActivity extends AppCompatActivity {
 
     Toolbar toolbar;
-    CollapsingToolbarLayout collapsingToolbar;
-    RecyclerView appScreenshotView;
+    RecyclerView appScreenshotsRecyclerView, appReviewsRecyclerView;
     ArrayList<String> screenshotImages;
+    ArrayList<AppReviewItemModel> appReviews;
     de.hdodenhof.circleimageview.CircleImageView profileImageView;
 
     @Override
@@ -48,14 +49,20 @@ public class AppActivity extends AppCompatActivity {
                 .load(R.drawable.profile_image)
                 .into(profileImageView);
 
-        appScreenshotView = findViewById(R.id.rv_app_screenshots);
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
-        appScreenshotView.setLayoutManager(layoutManager);
-        appScreenshotView.setHasFixedSize(true);
-        loadDataAndSetAdapter();
+        appScreenshotsRecyclerView = findViewById(R.id.rv_app_screenshots);
+        RecyclerView.LayoutManager horizontalLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+        appScreenshotsRecyclerView.setLayoutManager(horizontalLayoutManager);
+        appScreenshotsRecyclerView.setHasFixedSize(true);
+        loadScreenshotsDataAndSetAdapter();
+
+        appReviewsRecyclerView = findViewById(R.id.rv_app_reviews);
+        RecyclerView.LayoutManager verticalLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+        appReviewsRecyclerView.setLayoutManager(verticalLayoutManager);
+        appReviewsRecyclerView.setHasFixedSize(true);
+        loadAppReviewsDataAndSetAdapter();
     }
 
-    private void loadDataAndSetAdapter() {
+    private void loadScreenshotsDataAndSetAdapter() {
         screenshotImages = new ArrayList<>();
         screenshotImages.add("screenshot_1");
         screenshotImages.add("screenshot_2");
@@ -64,6 +71,20 @@ public class AppActivity extends AppCompatActivity {
         screenshotImages.add("screenshot_5");
         screenshotImages.add("screenshot_6");
 
-        appScreenshotView.setAdapter(new AppScreenshotsAdapter(screenshotImages, this));
+        appScreenshotsRecyclerView.setAdapter(new AppScreenshotsAdapter(screenshotImages, this));
+    }
+
+    private void loadAppReviewsDataAndSetAdapter() {
+        appReviews = new ArrayList<>();
+        appReviews.add(new AppReviewItemModel("John Butler", "This clone is one of the best and has good " +
+                "ux/ui but it lacks on content downloads for pls add resume/pause support for the active " +
+                "download", 4, "02/04/18", R.drawable.john_butler));
+
+        appReviews.add(new AppReviewItemModel("David Gilmour", "Great app! Loved it as " +
+                "much as I loved Pink Floyd.", 5, "09/04/18", R.drawable.david_gilmour));
+
+        appReviews.add(new AppReviewItemModel("Steven Wilson", "", 5, "02/04/18", R.drawable.steven_wilson));
+
+        appReviewsRecyclerView.setAdapter(new AppReviewsAdapter(appReviews, this));
     }
 }

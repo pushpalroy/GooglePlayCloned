@@ -39,4 +39,6 @@
     <string name="read_more">READ MORE</string>
     <string name="rate_this_app">Rate this app</string>
     <string name="submit">SUBMIT</string>
+    <string name="sample_date">02/04/218</string>
+    <string name="all_reviews">ALL REVIEWS</string>
 </resources>

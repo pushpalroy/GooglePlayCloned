@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    android:paddingEnd="10dp"
+    android:paddingStart="10dp"
+    android:paddingTop="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/iv_user_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="10dp"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="3dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/iv_user_image"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/iv_more_options"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_more_vert_black_18dp" />
+
+            <ImageView
+                android:id="@+id/iv_like_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/iv_more_options"
+                android:src="@drawable/ic_thumb_up_black_18dp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="3dp">
+
+            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                android:id="@+id/rb_user_review"
+                style="@style/Widget.MaterialRatingBar.RatingBar"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:rating="4.5"
+                android:stepSize="0.5"
+                app:mrb_fillBackgroundStars="true"
+                app:mrb_progressTint="@color/colorGrey" />
+
+            <TextView
+                android:id="@+id/tv_user_review_date"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/rb_user_review"
+                android:text="@string/sample_date"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_user_review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/app_desc"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+</RelativeLayout>

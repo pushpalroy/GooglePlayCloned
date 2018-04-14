@@ -112,6 +112,22 @@
                 android:progress="15"
                 android:progressDrawable="@drawable/progress_rating5" />
         </LinearLayout>
-
     </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_app_reviews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="@string/all_reviews"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp" />
 </LinearLayout>
