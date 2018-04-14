@@ -38,4 +38,8 @@
         <item name="colorButtonNormal">@color/colorPrimary</item>
         <item name="android:textColor">@color/colorAccent</item>
     </style>
+
+    <style name="NavigationView">
+        <item name="android:listDivider">@color/colorVeryLightGrey</item>
+    </style>
 </resources>

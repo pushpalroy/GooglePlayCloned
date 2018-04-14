@@ -41,4 +41,21 @@
     <string name="submit">SUBMIT</string>
     <string name="sample_date">02/04/218</string>
     <string name="all_reviews">ALL REVIEWS</string>
+    <string name="my_apps_and_games">My apps and games</string>
+    <string name="my_notifications">My notifications</string>
+    <string name="subscriptions">Subscriptions</string>
+    <string name="home">Home</string>
+    <string name="games">Games</string>
+    <string name="movies">Movies</string>
+    <string name="books">Books</string>
+    <string name="musics">Musics</string>
+    <string name="newsstand">Newsstand</string>
+    <string name="account">Account</string>
+    <string name="redeem">Redeem</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="play_protect">Play Protect</string>
+    <string name="settings">Settings</string>
+    <string name="help_and_feedback">Help and feedback</string>
+    <string name="parent_guide">Parent Guide</string>
+    <string name="about_google_play">About Google Play</string>
 </resources>

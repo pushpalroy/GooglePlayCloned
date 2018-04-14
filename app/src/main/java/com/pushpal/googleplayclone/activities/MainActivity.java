@@ -12,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
 import com.arlib.floatingsearchview.FloatingSearchView;
+import com.bumptech.glide.Glide;
 import com.pushpal.googleplayclone.R;
 import com.pushpal.googleplayclone.adapters.ViewPagerAdapter;
 import com.pushpal.googleplayclone.fragments.main.BooksFragment;
@@ -51,6 +52,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
+
+        NavigationView navigationView = findViewById(R.id.nav_view);
+        navigationView.setItemIconTintList(null);
+
+        de.hdodenhof.circleimageview.CircleImageView profileImageView = navigationView.getHeaderView(0).findViewById(R.id.profile_image);
+        Glide.with(this)
+                .load(R.drawable.profile_image)
+                .into(profileImageView);
 
         mSearchView.attachNavigationDrawerToMenuButton(drawer);
     }

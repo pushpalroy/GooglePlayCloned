@@ -7,71 +7,70 @@
         android:id="@+id/group1"
         android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_assistant_black_18dp"
-            android:title="My apps and games" />
+            android:id="@+id/nav_apps_and_games"
+            android:icon="@drawable/ic_nav_apps_and_games"
+            android:title="@string/my_apps_and_games" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_assistant_black_18dp"
-            android:title="My notifications" />
+            android:id="@+id/nav_my_notifications"
+            android:icon="@drawable/ic_nav_my_notifications"
+            android:title="@string/my_notifications" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_assistant_black_18dp"
-            android:title="Subscriptions" />
+            android:id="@+id/nav_subscriptions"
+            android:icon="@drawable/ic_nav_subscriptions"
+            android:title="@string/subscriptions" />
     </group>
-
     <group
         android:id="@+id/group2"
         android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_Home"
-            android:icon="@drawable/ic_assistant_black_18dp"
-            android:title="Home" />
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_nav_home"
+            android:title="@string/home" />
         <item
-            android:id="@+id/nav_Games"
-            android:icon="@drawable/ic_assistant_black_18dp"
-            android:title="Games" />
+            android:id="@+id/nav_games"
+            android:icon="@drawable/ic_nav_games"
+            android:title="@string/games" />
         <item
-            android:id="@+id/nav_Movies"
-            android:icon="@drawable/ic_assistant_black_18dp"
-            android:title="Movies" />
+            android:id="@+id/nav_movies"
+            android:icon="@drawable/ic_nav_movies"
+            android:title="@string/movies" />
         <item
-            android:id="@+id/nav_Musics"
-            android:icon="@drawable/ic_assistant_black_18dp"
-            android:title="Musics" />
+            android:id="@+id/nav_books"
+            android:icon="@drawable/ic_nav_books"
+            android:title="@string/books" />
         <item
-            android:id="@+id/nav_Books"
-            android:icon="@drawable/ic_assistant_black_18dp"
-            android:title="Books" />
+            android:id="@+id/nav_musics"
+            android:icon="@drawable/ic_nav_music"
+            android:title="@string/musics" />
         <item
-            android:id="@+id/nav_Newsstand"
-            android:icon="@drawable/ic_assistant_black_18dp"
-            android:title="Newsstand" />
+            android:id="@+id/nav_newsstand"
+            android:icon="@drawable/ic_nav_newstand"
+            android:title="@string/newsstand" />
     </group>
     <group
         android:id="@+id/group3"
         android:checkableBehavior="single">
         <item
-            android:icon="@drawable/ic_assistant_black_18dp"
-            android:title="Account" />
+            android:icon="@drawable/ic_nav_account"
+            android:title="@string/account" />
         <item
-            android:icon="@drawable/ic_assistant_black_18dp"
-            android:title="Redeem" />
+            android:icon="@drawable/ic_nav_redeem"
+            android:title="@string/redeem" />
         <item
-            android:icon="@drawable/ic_assistant_black_18dp"
-            android:title="Wishlist" />
+            android:icon="@drawable/ic_nav_wishlist"
+            android:title="@string/wishlist" />
         <item
-            android:icon="@drawable/ic_assistant_black_18dp"
-            android:title="Play Protect" />
+            android:icon="@drawable/ic_nav_play_protect"
+            android:title="@string/play_protect" />
         <item
-            android:icon="@drawable/ic_assistant_black_18dp"
-            android:title="Settings" />
+            android:icon="@drawable/ic_nav_settings"
+            android:title="@string/settings" />
     </group>
     <group
         android:id="@+id/group4"
         android:checkableBehavior="single">
-        <item android:title="Help and feedback" />
-        <item android:title="Parent Guide" />
-        <item android:title="About Google Play" />
+        <item android:title="@string/help_and_feedback" />
+        <item android:title="@string/parent_guide" />
+        <item android:title="@string/about_google_play" />
     </group>
 </menu>
