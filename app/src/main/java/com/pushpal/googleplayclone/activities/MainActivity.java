@@ -15,11 +15,7 @@ import com.arlib.floatingsearchview.FloatingSearchView;
 import com.bumptech.glide.Glide;
 import com.pushpal.googleplayclone.R;
 import com.pushpal.googleplayclone.adapters.ViewPagerAdapter;
-import com.pushpal.googleplayclone.fragments.main.BooksFragment;
-import com.pushpal.googleplayclone.fragments.main.GamesFragment;
 import com.pushpal.googleplayclone.fragments.main.HomeFragment;
-import com.pushpal.googleplayclone.fragments.main.MoviesFragment;
-import com.pushpal.googleplayclone.fragments.main.MusicFragment;
 import com.pushpal.googleplayclone.viewPager.CustomViewPager;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -67,10 +63,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new HomeFragment(), "Home");
-        adapter.addFragment(new GamesFragment(), "Games");
-        adapter.addFragment(new MoviesFragment(), "Movies");
-        adapter.addFragment(new BooksFragment(), "Books");
-        adapter.addFragment(new MusicFragment(), "Music");
+        adapter.addFragment(new HomeFragment(), "Games");
+        adapter.addFragment(new HomeFragment(), "Movies");
+        adapter.addFragment(new HomeFragment(), "Books");
+        adapter.addFragment(new HomeFragment(), "Music");
         viewPager.setAdapter(adapter);
     }
 

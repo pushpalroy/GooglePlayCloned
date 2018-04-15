@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.pushpal.googleplayclone.fragments.sub.home.topCharts.TopFreeAppsFragment">
+    tools:context=".fragments.home.topCharts.TopFreeAppsFragment">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_top_app_list"

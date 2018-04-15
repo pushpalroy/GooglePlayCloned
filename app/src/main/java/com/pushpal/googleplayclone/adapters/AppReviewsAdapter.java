@@ -17,8 +17,8 @@ import java.util.ArrayList;
 
 public class AppReviewsAdapter extends RecyclerView.Adapter<AppReviewsAdapter.AppViewHolder> {
 
-    private ArrayList<AppReviewItemModel> appReviewsList;
-    private Context mContext;
+    private final ArrayList<AppReviewItemModel> appReviewsList;
+    private final Context mContext;
 
     public AppReviewsAdapter(ArrayList<AppReviewItemModel> appReviewsList, Context context) {
         this.appReviewsList = appReviewsList;
@@ -51,9 +51,11 @@ public class AppReviewsAdapter extends RecyclerView.Adapter<AppReviewsAdapter.Ap
 
     class AppViewHolder extends RecyclerView.ViewHolder {
 
-        ImageView userImage;
-        TextView userName, userReview, userReviewDate;
-        me.zhanghai.android.materialratingbar.MaterialRatingBar userReviewRating;
+        final ImageView userImage;
+        final TextView userName;
+        final TextView userReview;
+        final TextView userReviewDate;
+        final me.zhanghai.android.materialratingbar.MaterialRatingBar userReviewRating;
 
         AppViewHolder(View itemView) {
             super(itemView);

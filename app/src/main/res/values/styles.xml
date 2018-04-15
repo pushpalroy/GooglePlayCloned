@@ -34,9 +34,14 @@
         <item name="colorPrimary">@android:color/holo_orange_dark</item>
     </style>
 
-    <style name="AppTheme.BlueButton" parent="Widget.AppCompat.Button.Colored">
+    <style name="AppTheme.GreenButton" parent="Widget.AppCompat.Button.Colored">
         <item name="colorButtonNormal">@color/colorPrimary</item>
         <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.UninstallButton" parent="Widget.AppCompat.Button">
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorPrimary</item>
     </style>
 
     <style name="NavigationView">

@@ -68,22 +68,107 @@
                     android:layout_height="wrap_content"
                     android:text="@string/app_size"
                     android:textSize="14sp" />
-
-                <android.support.v7.widget.AppCompatButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="end"
-                    android:paddingEnd="30dp"
-                    android:paddingStart="30dp"
-                    android:stateListAnimator="@null"
-                    android:text="@string/install_button"
-                    android:theme="@style/AppTheme.BlueButton" />
             </LinearLayout>
         </RelativeLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_install"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:paddingEnd="30dp"
+            android:paddingStart="30dp"
+            android:stateListAnimator="@null"
+            android:text="@string/install_button"
+            android:theme="@style/AppTheme.GreenButton" />
+
+        <RelativeLayout
+            android:id="@+id/rl_download"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_toStartOf="@id/iv_clear"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_download_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/tv_download_percent"
+                        android:text="@string/demo_download_size" />
+
+                    <TextView
+                        android:id="@+id/tv_download_percent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="@string/demo_download_percent" />
+
+                </RelativeLayout>
+
+                <ProgressBar
+                    android:id="@+id/pb_app_download"
+                    style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:progress="40" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_clear" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_open_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="2">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_uninstall"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn_outline"
+                android:paddingEnd="30dp"
+                android:paddingStart="30dp"
+                android:stateListAnimator="@null"
+                android:text="@string/button_uninstall"
+                android:theme="@style/AppTheme.UninstallButton" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_open"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingEnd="30dp"
+                android:paddingStart="30dp"
+                android:stateListAnimator="@null"
+                android:text="@string/button_open"
+                android:theme="@style/AppTheme.GreenButton" />
+        </LinearLayout>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
+            android:layout_marginTop="10dp"
             android:background="@color/colorVeryLightGrey" />
 
         <LinearLayout

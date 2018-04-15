@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/btn_outline" android:state_pressed="false">
+
+    </item>
+    <item android:drawable="@drawable/btn_outline_pressed" android:state_focused="true">
+
+    </item>
+
+    <item android:drawable="@drawable/btn_outline" />
+
+</selector>

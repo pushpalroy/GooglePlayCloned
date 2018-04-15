@@ -3,7 +3,7 @@
     <string name="micsearch">MicSearch</string>
     <string name="tab_one">For you</string>
     <string name="tab_two">Top Charts</string>
-    <string name="tab_three">New Releases</string>
+    <string name="tab_three">Categories</string>
     <string name="tab_four">Genres</string>
     <string name="tab_five">Editor\'s Choice</string>
     <string name="heading">Heading</string>
@@ -58,4 +58,10 @@
     <string name="help_and_feedback">Help and feedback</string>
     <string name="parent_guide">Parent Guide</string>
     <string name="about_google_play">About Google Play</string>
+    <string name="demo_download_size">2.96MB/5.26MB</string>
+    <string name="demo_download_percent">56%</string>
+    <string name="button_open">OPEN</string>
+    <string name="button_uninstall">UNINSTALL</string>
+    <string name="top_categories">Top categories</string>
+    <string name="all_categories">All categories</string>
 </resources>

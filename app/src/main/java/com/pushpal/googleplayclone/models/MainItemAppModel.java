@@ -1,25 +1,23 @@
 package com.pushpal.googleplayclone.models;
 
-import android.graphics.drawable.Drawable;
-
 public class MainItemAppModel {
     private String appName;
     private String appRating;
     private String isFree;
-    private Drawable appImage;
+    private int appImage;
 
-    public MainItemAppModel(String appName, String appRating, String isFree, Drawable appImage) {
+    public MainItemAppModel(String appName, String appRating, String isFree, int appImage) {
         this.appName = appName;
         this.appRating = appRating;
         this.isFree = isFree;
         this.appImage = appImage;
     }
 
-    public Drawable getAppImage() {
+    public int getAppImage() {
         return appImage;
     }
 
-    public void setAppImage(Drawable appImage) {
+    public void setAppImage(int appImage) {
         this.appImage = appImage;
     }
 

@@ -15,8 +15,8 @@ import java.util.ArrayList;
 
 public class AppScreenshotsAdapter extends RecyclerView.Adapter<AppScreenshotsAdapter.AppViewHolder> {
 
-    private ArrayList<String> screenShotsList;
-    private Context mContext;
+    private final ArrayList<String> screenShotsList;
+    private final Context mContext;
 
     public AppScreenshotsAdapter(ArrayList<String> screenShotsList, Context context) {
         this.screenShotsList = screenShotsList;
@@ -49,7 +49,7 @@ public class AppScreenshotsAdapter extends RecyclerView.Adapter<AppScreenshotsAd
 
     class AppViewHolder extends RecyclerView.ViewHolder {
 
-        ImageView screenshotImage;
+        final ImageView screenshotImage;
 
         AppViewHolder(View itemView) {
             super(itemView);

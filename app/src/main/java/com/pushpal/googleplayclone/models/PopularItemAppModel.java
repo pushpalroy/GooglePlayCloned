@@ -1,24 +1,23 @@
 package com.pushpal.googleplayclone.models;
 
-import android.graphics.drawable.Drawable;
-
 public class PopularItemAppModel {
-    private Drawable itemImage;
+    private int itemImage;
     private String itemHeader;
     private String itemSubHeader;
     private String itemNumber;
 
-    public PopularItemAppModel(String itemHeader, String itemSubHeader, Drawable itemImage, String itemNumber) {
+    public PopularItemAppModel(String itemHeader, String itemSubHeader, int itemImage, String itemNumber) {
         this.itemHeader = itemHeader;
         this.itemSubHeader = itemSubHeader;
         this.itemNumber = itemNumber;
+        this.itemImage = itemImage;
     }
 
-    public Drawable getItemImage() {
+    public int getItemImage() {
         return itemImage;
     }
 
-    public void setItemImage(Drawable itemImage) {
+    public void setItemImage(int itemImage) {
         this.itemImage = itemImage;
     }
 

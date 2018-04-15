@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.pushpal.googleplayclone.R;
 import com.pushpal.googleplayclone.activities.AppActivity;
 import com.pushpal.googleplayclone.models.MainItemAppModel;
@@ -20,7 +21,7 @@ import java.util.ArrayList;
 
 public class MainItemAppAdapter extends RecyclerView.Adapter<MainItemAppAdapter.MyViewHolder> {
 
-    private ArrayList<MainItemAppModel> mArrayList;
+    private final ArrayList<MainItemAppModel> mArrayList;
     private Context mcontext;
 
     MainItemAppAdapter(ArrayList<MainItemAppModel> mArrayList) {
@@ -37,8 +38,10 @@ public class MainItemAppAdapter extends RecyclerView.Adapter<MainItemAppAdapter.
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
+        Glide.with(mcontext)
+                .load(mArrayList.get(position).getAppImage())
+                .into(holder.iv_app_image);
 
-        //holder.iv_app_image.setImageDrawable(mArrayList.get(position).getAppImage());
         holder.tv_app_name.setText(mArrayList.get(position).getAppName());
         holder.tv_app_rating.setText(mArrayList.get(position).getAppRating());
 
@@ -51,9 +54,10 @@ public class MainItemAppAdapter extends RecyclerView.Adapter<MainItemAppAdapter.
     }
 
     class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        private ImageView iv_app_image;
-        private TextView tv_app_name, tv_app_rating;
-        private LinearLayout cardViewLayout;
+        private final ImageView iv_app_image;
+        private final TextView tv_app_name;
+        private final TextView tv_app_rating;
+        private final LinearLayout cardViewLayout;
 
         MyViewHolder(View view) {
             super(view);

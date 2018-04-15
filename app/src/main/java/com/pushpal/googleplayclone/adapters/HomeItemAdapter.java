@@ -2,7 +2,6 @@ package com.pushpal.googleplayclone.adapters;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -20,8 +19,8 @@ import java.util.ArrayList;
 
 public class HomeItemAdapter extends RecyclerView.Adapter {
 
-    private ArrayList<HomeItemModel> mArrayList;
-    private Context context;
+    private final ArrayList<HomeItemModel> mArrayList;
+    private final Context context;
 
     public HomeItemAdapter(ArrayList<HomeItemModel> mArrayList, Context context) {
         this.mArrayList = mArrayList;
@@ -93,10 +92,41 @@ public class HomeItemAdapter extends RecyclerView.Adapter {
         return mArrayList.size();
     }
 
+    private ArrayList<MainItemAppModel> loadNormalList() {
+        ArrayList<MainItemAppModel> mArrayList = new ArrayList<>();
+
+        if (context != null) {
+            mArrayList.add(new MainItemAppModel("Udacity", "4.3", "FREE", R.drawable.ic_udacity));
+            mArrayList.add(new MainItemAppModel("Facebook", "4.1", "FREE", R.drawable.logo_facebook));
+            mArrayList.add(new MainItemAppModel("Slack", "4.4", "FREE", R.drawable.logo_slack));
+            mArrayList.add(new MainItemAppModel("Gmail", "4.3", "FREE", R.drawable.logo_gmail));
+            mArrayList.add(new MainItemAppModel("LinkedIn", "4.2", "FREE", R.drawable.logo_linkedin));
+            mArrayList.add(new MainItemAppModel("Whatsapp", "4.4", "FREE", R.drawable.logo_whatsapp));
+            mArrayList.add(new MainItemAppModel("To do", "4.0", "FREE", R.drawable.logo_to_do));
+            mArrayList.add(new MainItemAppModel("Code Monk", "4.3", "FREE", R.drawable.logo_code_monk));
+        }
+
+        return mArrayList;
+    }
+
+    private ArrayList<PopularItemAppModel> loadPopularList() {
+        ArrayList<PopularItemAppModel> mArrayList = new ArrayList<>();
+
+        if (context != null) {
+            mArrayList.add(new PopularItemAppModel("Awesome Cricket Games", "Enjoy seasonal clones and updates", R.drawable.card_image_1, "1/4"));
+            mArrayList.add(new PopularItemAppModel("World Heath Day", "Discover clones for a healthy life", R.drawable.card_image_2, "2/4"));
+            mArrayList.add(new PopularItemAppModel("Flat 50% off on clones", "Life stories of clone legends", R.drawable.card_image_3, "3/4"));
+            mArrayList.add(new PopularItemAppModel("Clone on Big Screen", "Clones about the sport and players", R.drawable.card_image_4, "4/4"));
+        }
+
+        return mArrayList;
+    }
+
     class NormalViewHolder extends RecyclerView.ViewHolder {
-        private TextView tv_card_header, tv_card_sub_header;
-        private TextView btn_more;
-        private RecyclerView main_item_app_recycler_view;
+        private final TextView tv_card_header;
+        private final TextView tv_card_sub_header;
+        private final TextView btn_more;
+        private final RecyclerView main_item_app_recycler_view;
 
 
         NormalViewHolder(View view) {
@@ -110,40 +140,12 @@ public class HomeItemAdapter extends RecyclerView.Adapter {
     }
 
     class PopularViewHolder extends RecyclerView.ViewHolder {
-        private RecyclerView popular_item_app_recycler_view;
+        private final RecyclerView popular_item_app_recycler_view;
 
         PopularViewHolder(View view) {
             super(view);
             popular_item_app_recycler_view = view.findViewById(R.id.popular_item_app_recycler_view);
         }
-    }
-
-    private ArrayList<MainItemAppModel> loadNormalList() {
-        ArrayList<MainItemAppModel> mArrayList = new ArrayList<>();
-
-        if (context != null) {
-            mArrayList.add(new MainItemAppModel("World Clone Championship", "4.7", "FREE", null));
-            mArrayList.add(new MainItemAppModel("Sky Clone Reloaded", "4.6", "FREE", null));
-            mArrayList.add(new MainItemAppModel("Clone Attack: Clone Shooter", "3.8", "FREE", null));
-            mArrayList.add(new MainItemAppModel("Merge Clones!", "4.0", "FREE", null));
-            mArrayList.add(new MainItemAppModel("Clone Logan Estate", "4.6", "FREE", null));
-            mArrayList.add(new MainItemAppModel("Flutter: Clone", "4.8", "FREE", null));
-        }
-
-        return mArrayList;
-    }
-
-    private ArrayList<PopularItemAppModel> loadPopularList() {
-        ArrayList<PopularItemAppModel> mArrayList = new ArrayList<>();
-
-        if (context != null) {
-            mArrayList.add(new PopularItemAppModel("Awesome Cricket Games", "Enjoy seasonal clones and updates", ContextCompat.getDrawable(context, R.drawable.cricket2), "1/4"));
-            mArrayList.add(new PopularItemAppModel("World Heath Day", "Discover clones for a healthy life", ContextCompat.getDrawable(context, R.drawable.world_health_day), "2/4"));
-            mArrayList.add(new PopularItemAppModel("Flat 50% off on clones", "Life stories of clone legends", ContextCompat.getDrawable(context, R.drawable.world_health_day), "3/4"));
-            mArrayList.add(new PopularItemAppModel("Clone on Big Screen", "Clones about the sport and players", ContextCompat.getDrawable(context, R.drawable.world_health_day), "4/4"));
-        }
-
-        return mArrayList;
     }
 
     @Override
