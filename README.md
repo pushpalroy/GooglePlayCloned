@@ -1,6 +1,6 @@
 # GooglePlayCloned
 
-This project has been done for the **Copy Layout Challenge** as a part of **Google India Challenge Scholarship**. Cloning was layout of **Google Play Store App** was the first thing on my mind when I got to know about this challenege. Learnt a lot of things through this project. Thanks to the complex UI/UX of Google Play Store App.
+This project has been done for the **Copy Layout Challenge** as a part of **Google India Challenge Scholarship**. Cloning the layout of **Google Play Store App** was the first thing on my mind when I got to know about this challenege. Learnt a lot of things through this project. Thanks to the complex UI/UX of Google Play Store App.
 
 ###### Screenshots of the Cloned App:
 
