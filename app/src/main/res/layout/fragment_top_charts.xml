@@ -19,7 +19,7 @@
             android:layout_toStartOf="@+id/sw_installed_apps"
             android:text="@string/show_installed_apps" />
 
-        <android.support.v7.widget.SwitchCompat
+        <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/sw_installed_apps"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -28,7 +28,7 @@
             android:theme="@style/SwitchCompatTheme" />
     </RelativeLayout>
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cv_app_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -41,7 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <android.support.design.widget.TabLayout
+            <com.google.android.material.tabs.TabLayout
                 android:id="@+id/tl_app_list"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/custom_sub_tab_layout_height2"
@@ -64,5 +64,5 @@
                 app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
         </RelativeLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 </LinearLayout>

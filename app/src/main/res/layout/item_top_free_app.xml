@@ -27,8 +27,8 @@
         android:layout_height="75dp"
         android:layout_alignTop="@id/iv_app_item"
         android:layout_toEndOf="@+id/iv_app_item"
-        android:paddingEnd="10dp"
-        android:paddingStart="10dp">
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
 
         <ImageView
             android:id="@+id/iv_more_options"
@@ -72,8 +72,8 @@
                 android:id="@+id/tv_app_size"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingEnd="2dp"
                 android:paddingStart="2dp"
+                android:paddingEnd="2dp"
                 android:text="@string/demo_size"
                 android:textSize="12sp" />
 
@@ -81,8 +81,8 @@
                 android:id="@+id/iv_app_dot"
                 android:layout_width="5dp"
                 android:layout_height="5dp"
-                android:layout_alignBottom="@+id/tv_app_size"
                 android:layout_alignTop="@+id/tv_app_size"
+                android:layout_alignBottom="@+id/tv_app_size"
                 android:layout_toEndOf="@+id/tv_app_size"
                 android:contentDescription="@string/app_name"
                 android:src="@drawable/ic_fiber_manual_record_black_18dp" />
@@ -92,9 +92,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toEndOf="@+id/iv_app_dot"
-                android:paddingEnd="2dp"
-                android:paddingStart="2dp"
                 android:drawablePadding="5dp"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
                 android:text="@string/sample_rating"
                 android:textSize="12sp" />
 
@@ -102,8 +102,8 @@
                 android:id="@+id/iv_app_rating"
                 android:layout_width="8dp"
                 android:layout_height="8dp"
-                android:layout_alignBottom="@+id/tv_app_ratings"
                 android:layout_alignTop="@+id/tv_app_ratings"
+                android:layout_alignBottom="@+id/tv_app_ratings"
                 android:layout_toEndOf="@+id/tv_app_ratings"
                 android:contentDescription="@string/app_name"
                 android:src="@drawable/ic_star_black_18dp" />

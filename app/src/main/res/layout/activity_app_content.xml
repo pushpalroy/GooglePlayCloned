@@ -50,13 +50,13 @@
                     android:id="@+id/tv_app_3_plus"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
                     android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
                     android:background="@drawable/bg_black_rect"
-                    android:paddingBottom="1dp"
-                    android:paddingEnd="2dp"
                     android:paddingStart="2dp"
                     android:paddingTop="1dp"
+                    android:paddingEnd="2dp"
+                    android:paddingBottom="1dp"
                     android:text="@string/app_three_plus"
                     android:textColor="@color/colorBlack"
                     android:textSize="12sp"
@@ -71,13 +71,13 @@
             </LinearLayout>
         </RelativeLayout>
 
-        <android.support.v7.widget.AppCompatButton
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_install"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:paddingEnd="30dp"
             android:paddingStart="30dp"
+            android:paddingEnd="30dp"
             android:stateListAnimator="@null"
             android:text="@string/install_button"
             android:theme="@style/AppTheme.GreenButton" />
@@ -141,25 +141,25 @@
             android:visibility="gone"
             android:weightSum="2">
 
-            <android.support.v7.widget.AppCompatButton
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_uninstall"
                 android:layout_width="0dp"
                 android:layout_height="38dp"
                 android:layout_weight="1"
                 android:background="@drawable/bg_btn_outline"
-                android:paddingEnd="30dp"
                 android:paddingStart="30dp"
+                android:paddingEnd="30dp"
                 android:stateListAnimator="@null"
                 android:text="@string/button_uninstall"
                 android:theme="@style/AppTheme.UninstallButton" />
 
-            <android.support.v7.widget.AppCompatButton
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_open"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:paddingEnd="30dp"
                 android:paddingStart="30dp"
+                android:paddingEnd="30dp"
                 android:stateListAnimator="@null"
                 android:text="@string/button_open"
                 android:theme="@style/AppTheme.GreenButton" />
@@ -203,12 +203,12 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
                         android:layout_centerInParent="true"
-                        android:layout_marginEnd="5dp"
                         android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
                         android:background="@drawable/bg_item_count"
                         android:gravity="center"
-                        android:paddingBottom="2dp"
                         android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
                         android:text="@string/million"
                         android:textColor="@color/colorAccent"
                         android:textSize="10sp"
@@ -251,9 +251,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
-                        android:layout_marginBottom="14dp"
-                        android:layout_marginEnd="16dp"
                         android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="14dp"
                         android:orientation="horizontal">
 
                         <ImageView
@@ -384,7 +384,7 @@
             android:textSize="14sp" />
     </LinearLayout>
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_app_screenshots"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

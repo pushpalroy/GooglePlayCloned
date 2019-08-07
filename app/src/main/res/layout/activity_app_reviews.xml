@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -25,21 +24,18 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignBottom="@+id/tv_app_rating"
-            android:layout_marginEnd="5dp"
             android:layout_marginStart="8dp"
+            android:layout_marginEnd="5dp"
             android:layout_toEndOf="@+id/tv_app_rating"
             android:gravity="bottom"
             android:orientation="vertical">
 
-            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            <RatingBar
                 android:id="@+id/rb_app"
-                style="@style/Widget.MaterialRatingBar.RatingBar"
                 android:layout_width="wrap_content"
                 android:layout_height="14dp"
                 android:rating="4.5"
-                android:stepSize="0.5"
-                app:mrb_fillBackgroundStars="true"
-                app:mrb_progressTint="@color/colorGrey" />
+                android:stepSize="0.5" />
 
             <TextView
                 android:id="@+id/tv_app_users_label"
@@ -56,8 +52,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_alignBottom="@+id/tv_app_rating"
-            android:layout_marginEnd="20dp"
             android:layout_marginStart="15dp"
+            android:layout_marginEnd="20dp"
             android:layout_toEndOf="@id/ll_stars"
             android:gravity="bottom"
             android:orientation="vertical">
@@ -114,7 +110,7 @@
         </LinearLayout>
     </RelativeLayout>
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_app_reviews"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

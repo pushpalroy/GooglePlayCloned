@@ -2,9 +2,9 @@
     android:id="@+id/cardViewLayout"
     android:layout_width="110dp"
     android:layout_height="180dp"
-    android:layout_marginBottom="5dp"
-    android:layout_marginEnd="12dp"
     android:layout_marginStart="0dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginBottom="5dp"
     android:orientation="vertical">
 
     <ImageView
@@ -57,8 +57,8 @@
             android:id="@+id/iv_app_rating"
             android:layout_width="8dp"
             android:layout_height="8dp"
-            android:layout_alignBottom="@+id/tv_app_rating"
             android:layout_alignTop="@+id/tv_app_rating"
+            android:layout_alignBottom="@+id/tv_app_rating"
             android:layout_toEndOf="@+id/tv_app_rating"
             android:contentDescription="@string/app_name"
             android:src="@drawable/ic_star_black_18dp" />

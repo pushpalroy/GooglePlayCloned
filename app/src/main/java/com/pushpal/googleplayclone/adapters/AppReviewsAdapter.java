@@ -1,13 +1,15 @@
 package com.pushpal.googleplayclone.adapters;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.pushpal.googleplayclone.R;
@@ -55,7 +57,7 @@ public class AppReviewsAdapter extends RecyclerView.Adapter<AppReviewsAdapter.Ap
         final TextView userName;
         final TextView userReview;
         final TextView userReviewDate;
-        final me.zhanghai.android.materialratingbar.MaterialRatingBar userReviewRating;
+        final RatingBar userReviewRating;
 
         AppViewHolder(View itemView) {
             super(itemView);

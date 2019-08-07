@@ -3,12 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingBottom="20dp"
-    android:paddingEnd="10dp"
     android:paddingStart="10dp"
-    android:paddingTop="10dp">
+    android:paddingTop="10dp"
+    android:paddingEnd="10dp"
+    android:paddingBottom="20dp">
 
-    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/iv_user_image"
         android:layout_width="60dp"
         android:layout_height="60dp"
@@ -57,16 +57,13 @@
             android:layout_gravity="center_vertical"
             android:layout_marginTop="3dp">
 
-            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            <RatingBar
                 android:id="@+id/rb_user_review"
-                style="@style/Widget.MaterialRatingBar.RatingBar"
                 android:layout_width="90dp"
                 android:layout_height="match_parent"
                 android:layout_centerVertical="true"
                 android:rating="4.5"
-                android:stepSize="0.5"
-                app:mrb_fillBackgroundStars="true"
-                app:mrb_progressTint="@color/colorGrey" />
+                android:stepSize="0.5" />
 
             <TextView
                 android:id="@+id/tv_user_review_date"
@@ -84,8 +81,8 @@
             android:id="@+id/tv_user_review"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
             android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
             android:text="@string/app_desc"
             android:textColor="@color/black"
             android:textSize="14sp" />
